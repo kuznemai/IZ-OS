@@ -1,0 +1,201 @@
+* {
+    font-family: "Roboto Thin", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p, h1,h2,h3,h4,h5 {
+    color: #FFFFFFFF;
+    font-family: "Roboto Thin", sans-serif;
+}
+
+.bold {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.normal {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #000000FF;
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 110px;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.header__list{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+}
+
+.header__list > li > a{
+    color: #FFFFFFFF;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    font-size: 16px;
+}
+
+.header__list > li > a:hover {
+    font-weight: 500;
+    color: #FFFFFFFF;
+    opacity: 1;
+}
+
+/*Main*/
+
+
+.welcome {
+    padding: 100px 0;
+}
+
+.welcome .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    position: relative;
+}
+
+.welcome .container:after {
+    content: "";
+    width: 875px;
+    height: 815px;
+    background-image: url("img/Ellipse_12_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    position: absolute;
+    right: -250px;
+    top: -90px;
+    z-index: -1;
+}
+
+.welcome__title {
+    font-size: 58px;
+    color: white;
+}
+
+.welcome__desc {
+    font-size: 22px;
+    line-height: 25px;
+    color: white;
+    font-weight: 400;
+}
+
+.welcome_image > img {
+    width: 400px;
+}
+
+/*Description*/
+
+.introduction__container {
+    position: relative;
+    padding: 200px 0;
+}
+
+.introduction__img {
+    position: absolute;
+    left: -1000px;
+    box-shadow: 43px 38px 61px 0px rgba(255,255,255,0.1);
+}
+
+.introduction__desc{
+    width: 400px;
+    height: 400px;
+    text-align: justify;
+    margin-left: auto;
+}
+
+/*Characteristics*/
+
+
+.characteristics__container {
+    padding: 100px 0;
+}
+
+.characteristics__image {
+    width: 1140px;
+    height: 640px;
+}
+
+.characteristics__desc {
+    text-align: justify;
+    margin-top: 75px;
+}
+
+/*Product description*/
+
+.product_description__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+
+    position: relative;
+}
+.product_description__block {
+    width: 520px;
+    height: 520px;
+    text-align: justify;
+}
+
+.product_description__block:after {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-image: url("img/Ellipse_12_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    position: absolute;
+    top: 80px;
+    right: 950px;
+    z-index: -1;
+}
+
+.product_description__image {
+    width: 300px;
+    height: 590px;
+    box-shadow: 43px 38px 61px 0px rgba(255,255,255,0.1);
+}
+
+
