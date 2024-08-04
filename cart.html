@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <img src="img/logo.png" alt="logo" class="header__logo">
+
+        <nav class="header__nav">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="header__list">
+                <li><a href="index.html" class="menu-item">HOME</a></li>
+                <li><a href="#" class="menu-item">OUR OFFER</a></li>
+                <li><a href="#" class="menu-item">PRICING</a></li>
+                <li><a href="shop.html" class="menu-item">SHOP</a></li>
+                <li><a href="#" class="menu-item">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <ul class="nav-addons">
+            <li><a href="#" class="menu-item nav-addons__search"><img src="img/search.png" alt="search" class="search"></a>
+            </li>
+            <li><a href="#" class="menu-item nav-addons__profile"><img src="img/profile.png" alt="profile"
+                                                                       class="profile"></a></li>
+            <li><a href="cart.html" class="menu-item nav-addons__cart"><img src="img/cart.png" alt="cart" class="cart"></a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="wrapper">
+    <main class="main">
+        <section class="checkout">
+            <div class="container checkout_elements">
+                <div class="selected-item">
+                    <div class="selected-item__container">
+                        <div class="selected-item__header">
+                            <p>Selected item(s)</p>
+                            <p> 1 item(s)</p>
+                        </div>
+
+                        <div class="selected-item__main">
+
+                            <div><img src="img/white_phone.jpg" alt="item-image" class="item-image">
+                                <p class="selected-item__main_description mini">GENERAL MOBILE IZ OS ядер - 8x(1.6 ГГц),
+                                    4 ГБ, 2 SIM, IPS, 1612x720, камера 16+0.08 Мп, NFC, 4G,
+                                    GPS</p></div>
+                            <div><p>$ 2500.00</p></div>
+                            <!--                        <p>Qty:</p>-->
+                            <!--                        <div class="button">-->
+
+                            <!--                            <input type="button" value="-" id="minus" />-->
+                            <!--                            <input type="text" id="space_bottom" disabled />-->
+                            <!--                            <input type="button" value="+" id="plus" /></div>-->
+
+                            <!--                        <p>Remove</p>-->
+                        </div>
+                        <div class="subtotal "><p class="semibold">Subtotal: $2500</p></div>
+                    </div>
+                </div>
+
+                <div class="summary_cards">
+                    <div class="summary">
+                        <div><p>Summary</p></div>
+                        <div class="half-clear"><p>Subtotal (Including VAT)</p>
+                            <p>$ 2500.00</p></div>
+                        <div><p>Total</p>
+                            <p class="semibold">$ 2500.00</p></div>
+                        <div>
+                            <a href="login.html" class="checkout_button__login"><button class="checkout_button normal">Check out</button></a>
+                        </div>
+                    </div>
+
+                    <div class="cards-supported">
+                        <p>Cards supported:</p>
+                        <div class="payment-logos">
+                            <img src="img/visa.png">
+                            <img src="img/mastercard.png">
+                            <img src="img/btc-pay.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <img src="img/logo.png" alt="logo" class="header__logo">
+
+        <nav class="header__nav">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="header__list">
+                <li><a href="index.html" class="menu-item">HOME</a></li>
+                <li><a href="#" class="menu-item">OUR OFFER</a></li>
+                <li><a href="#" class="menu-item">PRICING</a></li>
+                <li><a href="shop.html" class="menu-item">SHOP</a></li>
+                <li><a href="#" class="menu-item">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <ul class="nav-addons">
+            <li><a href="#" class="menu-item nav-addons__search"><img src="img/search.png" alt="search" class="search"></a>
+            </li>
+            <li><a href="#" class="menu-item nav-addons__profile"><img src="img/profile.png" alt="profile"
+                                                                       class="profile"></a></li>
+            <li><a href="cart.html" class="menu-item nav-addons__cart"><img src="img/cart.png" alt="cart" class="cart"></a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="wrapper">
+    <main class="main">
+        <section class="login_section">
+            <div class="container login_wrapper">
+                <div class="login_block item-style">
+                    <h2 class="bold" id="login_desc_main">Log in</h2>
+                    <h5 class="normal" id="login_desc">Log in to make purchase and view your orders.</h5>
+                    <a href="#"><button class="login_button">Log in</button></a>
+                    <a href="#" class="normal">Register</a>
+                </div>
+                <div class="guest_block item-style">
+                    <h5 class="continue-guest normal">
+                        <span class="or-text ">OR</span>
+                        <span class="continue-guest-text"> Continue as guest</span>
+                    </h5>
+                    <div class="header_search_input">
+                        <input type="text" placeholder="Email*" id="loginguestemail" class="header_search_input__input">
+                    </div>
+                    <a href="shipping.html"> <button class="continue">Continue</button></a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="75.577" viewBox="0 0 80 75.577">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #707070;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_4" data-name="组 4" transform="translate(-641 -174.423)">
+    <g id="路径_5" data-name="路径 5" class="cls-1" transform="translate(641 179)">
+      <path class="cls-4" d="M9,0H71a9,9,0,0,1,9,9V62a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V9A9,9,0,0,1,9,0Z"/>
+      <path class="cls-5" d="M 9 2 C 5.140190124511719 2 2 5.140190124511719 2 9 L 2 62 C 2 65.85980987548828 5.140190124511719 69 9 69 L 71 69 C 74.85980987548828 69 78 65.85980987548828 78 62 L 78 9 C 78 5.140190124511719 74.85980987548828 2 71 2 L 9 2 M 9 0 L 71 0 C 75.97056579589844 0 80 4.029434204101563 80 9 L 80 62 C 80 66.97056579589844 75.97056579589844 71 71 71 L 9 71 C 4.029434204101563 71 0 66.97056579589844 0 62 L 0 9 C 0 4.029434204101563 4.029434204101563 0 9 0 Z"/>
+    </g>
+    <path id="路径_6" data-name="路径 6" class="cls-2" d="M0,0H77.75" transform="translate(642.5 197.902)"/>
+    <g id="组_1" data-name="组 1" transform="translate(-6.5 -41.077)">
+      <line id="直线_2" data-name="直线 2" class="cls-2" y1="17.077" transform="translate(674.5 215.5)"/>
+      <line id="直线_3" data-name="直线 3" class="cls-2" y1="17.077" transform="translate(699.75 215.5)"/>
+    </g>
+    <path id="路径_7" data-name="路径 7" class="cls-3" d="M3.747,0H6.463l9.075-22.309V-24.75H1.375v2.441H12.822Z" transform="translate(673 237)"/>
+  </g>
+</svg>

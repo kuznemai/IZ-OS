@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <img src="img/logo.png" alt="logo" class="header__logo">
+    </div>
+</header>
+
+<div class="wrapper">
+    <main class="main">
+        <section class="checkout">
+            <div class="container checkout_wrapper">
+
+                <div class="checkout_shipping item-style">
+                    <div class="checkout_inner-text">
+                        <h2 class="checkout__title fade-in">Check Out</h2>
+                    </div>
+
+                    <h5>Shipping method</h5>
+                    <h2>1. Address</h2>
+                    <h5>Shipping address</h5>
+
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Name*">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="code" required placeholder="+(971)" readonly="readonly">
+                            <input type="phone" id="phone" placeholder="Phone*" pattern="^\52{7}$" required>
+                        </div>
+
+                        <div class="form-group">
+                            <form>
+                                <!--                                <label for="city-select">City</label>-->
+                                <select name="city" id="city-select">
+                                    <option value="">City</option>
+                                    <option value="Abu Dhabi">Abu Dhabi</option>
+                                    <option value="Ajman">Ajman</option>
+                                    <option value="Al Ain">Al Ain</option>
+                                    <option value="Dubai">Dubai</option>
+                                    <option value="Fujairah">Fujairah</option>
+                                    <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                                    <option value="Sharjah">Sharjah</option>
+                                    <option value="Umm Al Quwain">Umm Al Quwain</option>
+                                </select>
+
+                                <!--                                <label for="city-select">City</label>-->
+                                <select name="city" id="district-select">
+                                    <option value="">District</option>
+                                    <option value="Abu Dhabi">Abu Dhabi</option>
+                                    <option value="Ajman">Ajman</option>
+                                    <option value="Al Ain">Al Ain</option>
+                                    <option value="Dubai">Dubai</option>
+                                    <option value="Fujairah">Fujairah</option>
+                                    <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                                    <option value="Sharjah">Sharjah</option>
+                                    <option value="Umm Al Quwain">Umm Al Quwain</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Email*">
+                        </div>
+
+                        <h5>Billing address</h5>
+                        <input type="checkbox" id="scales" value="Same as shipping address" name="scales" checked/>
+                        <label for="scales">Same as shipping address</label>
+
+                        <h5 class="normal">Invoice</h5>
+
+                        <div class="radio_for_invoice">
+
+                            <input type="radio" id="personal_invoice" name="personal_invoice" value="personal_invoice"
+                                   checked/>
+                            <label for="personal_invoice">Personal invoice</label>
+
+
+                            <input type="radio" id="company_invoice" name="company_invoice" value="company_invoice"/>
+                            <label for="company_invoice">Company invoice</label>
+
+                        </div>
+
+                        <a href="#">
+                            <button class="continue">Continue</button>
+                        </a>
+
+                        <h2 class="half-clear">2. Delivery</h2>
+                        <div class="delivery normal">
+                            <h5>Standard Service</h5>
+                            <h5>Free delivery</h5>
+                        </div>
+                        <a href="#">
+                            <button class="continue">Continue</button>
+                        </a>
+
+                        <div class="payment_details">
+                            <h2 class="half-clear">3. Payment method</h2>
+                            <div class="card_payment_visa">
+                                <!--                                        <h5>Card Payment</h5>-->
+                                <!--                                        <img src="img/visa.png" alt="visa">-->
+                                <!--                                        <img src="img/mastercard.png" alt="visa">-->
+
+                                <form id="paymentForm">
+                                    <div class="form-group">
+                                        <input type="text" id="cardHolder" required placeholder="Cardholder full name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="cardNumber" required placeholder="Card number"
+                                               maxlength="19">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="expiryDate" required placeholder="MM/YY" maxlength="5">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="securityCode" required placeholder="CVC/CVV*"
+                                               maxlength="3">
+                                    </div>
+                                    <button class="card_payment_visa__payment_button" type="submit">Complete payment
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+                <div class="right_block">
+                    <div class="checkout_summary item-style">
+                        <h2 class="semibold">Summary</h2>
+
+                        <div class="checkout_summary__content">
+
+                            <div class="checkout_summary__content_line">
+                                <p class="half-clear">Subtotal ( Including VAT )</p>
+                                <p class="half-clear">$ 2500.00</p>
+                            </div>
+
+                            <div class="checkout_summary__content_line">
+                                <p class="half-clear">Shipping fee</p>
+                                <p class="half-clear">$ 0.00</p>
+                            </div>
+
+                            <div class="checkout_summary__content_line">
+                                <p>Total</p>
+                                <p class="semibold">$ 2500.00</p>
+                            </div>
+
+                            <div class="checkout_summary__content_line">
+                                <h5 class="normal">Shopping cart</h5>
+                                <p class="fat">1 item(s)</p>
+                            </div>
+
+                            <div class="checkout_summary__content_line">
+                                <div class="checkout_summary__content_item">
+                                    <img src="img/white_phone.jpg" class="checkout_summary__image">
+                                </div>
+                                <div class="checkout_summary__content_desc">
+                                    <p>ядер - 8x(1.6 ГГц), 4 ГБ, 2 SIM, IPS,
+                                        1612x720
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="checkout_summary__content_line" id="checkout_summary__price_qty">
+                                <p>$ 2500.00</p>
+                                <p class="half-clear">Qty : 1</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="checkout_services item-style">
+                        <h2>Services</h2>
+
+                        <div class="checkout_services__item">
+                            <img src="img/delivery.svg">
+                            <div>
+                                <h5>FREE DELIVERY</h5>
+                                <p>For Orders Over AED 200</p>
+                            </div>
+                        </div>
+
+                        <div class="checkout_services__item">
+                            <img src="img/warranty.svg">
+                            <div>
+                                <h5>12 MONTHS WARRANTY</h5>
+                                <p>Authentic Guarantee</p>
+                            </div>
+                        </div>
+
+                        <div class="checkout_services__item">
+                            <img src="img/warranty.svg">
+                            <div>
+                                <h5>7 DAYS RETURN</h5>
+                                <p>In Sealed Condition</p>
+                            </div>
+                        </div>
+
+                        <div class="checkout_services__item">
+                            <img src="img/payment.svg">
+                            <div>
+                                <h5>100% SECURE</h5>
+                                <p>Payment gateway</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+</div>
+
+
+<!--<h2>Check out</h2>-->
+<!--<div class="wrapper">-->
+<!--    <main class="main">-->
+<!--        <section class="checkout">-->
+<!--            <div class=" container">-->
+<!--                <div class="checkout_wrapper item-style">-->
+<!--                <h5 class="normal">Shipping method</h5>-->
+<!--                <h2>1.Address</h2>-->
+<!--                <div class="checkout_form">-->
+<!--                    <h5 class="normal">Shipping address</h5>-->
+<!--                    <div class="header_search_input" id="name_form">-->
+<!--                        <input type="text" placeholder="Name*" class="checkout_input" id="name">-->
+<!--                    </div>-->
+<!--                    <div class="input_items">-->
+<!--                        <div class="phone_info">-->
+<!--                            <div class="header_search_input">-->
+<!--                                <input type="text" placeholder="Code*" class="checkout_input" id="code">-->
+<!--                            </div>-->
+<!--                            <div class="header_search_input">-->
+<!--                                <input type="text" placeholder="Phone*" class="checkout_input" id="phone">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="address_info">-->
+<!--                            <div class="header_search_input">-->
+<!--                                <input type="text" placeholder="Address line" class="checkout_input" id="address_line">-->
+<!--                            </div>-->
+<!--                            <div class="header_search_input">-->
+<!--                                <input type="text" placeholder="Address line(Optional)" class="checkout_input"-->
+<!--                                       id="optional_address">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="city_info">-->
+<!--                            <form>-->
+<!--                                &lt;!&ndash;                        <label for="city-select">City</label>&ndash;&gt;-->
+<!--                                <select name="city" id="city-select">-->
+<!--                                    <option value="">City</option>-->
+<!--                                    <option value="Abu Dhabi">Abu Dhabi</option>-->
+<!--                                    <option value="Ajman">Ajman</option>-->
+<!--                                    <option value="Al Ain">Al Ain</option>-->
+<!--                                    <option value="Dubai">Dubai</option>-->
+<!--                                    <option value="Fujairah">Fujairah</option>-->
+<!--                                    <option value="Ras Al Khaimah">Ras Al Khaimah</option>-->
+<!--                                    <option value="Sharjah">Sharjah</option>-->
+<!--                                    <option value="Umm Al Quwain">Umm Al Quwain</option>-->
+<!--                                </select>-->
+<!--                            </form>-->
+<!--                            <form>-->
+<!--                                &lt;!&ndash;                        <label for="city-select">District</label>&ndash;&gt;-->
+<!--                                <select name="city" id="district-select">-->
+<!--                                    <option value="">District</option>-->
+<!--                                    <option value="petersburg">Санкт-Петербург</option>-->
+<!--                                    <option value="samara">Самара</option>-->
+<!--                                    <option value="perm">Пермь</option>-->
+<!--                                    <option value="novosibirsk">Новосибирск</option>-->
+<!--                                </select>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="header_search_input">-->
+<!--                        <input type="text" placeholder="Email*" class="checkout_input" id="email">-->
+<!--                    </div>-->
+
+<!--                    <div>-->
+<!--                        <h5 class="normal">Billing address</h5>-->
+<!--                        <input type="checkbox" id="scales" value="Same as shipping address" name="scales" checked/>-->
+<!--                        <label for="scales">Same as shipping address</label>-->
+<!--                    </div>-->
+
+<!--                    <div class="invoice_radio">-->
+<!--                        <div>-->
+<!--                            <h5 class="normal">Invoice</h5>-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <input type="radio" id="personal_invoice" name="personal_invoice" value="personal_invoice"-->
+<!--                                   checked/>-->
+<!--                            <label for="personal_invoice">Personal invoice</label>-->
+<!--                        </div>-->
+
+<!--                        <div>-->
+<!--                            <input type="radio" id="company_invoice" name="company_invoice" value="company_invoice"/>-->
+<!--                            <label for="company_invoice">Company invoice</label>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <a href="#">-->
+<!--                        <button class="continue">Continue</button>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <h2 class="half-clear">2.Delivery</h2>-->
+<!--                <h2 class="half-clear">3.Payment method</h2>-->
+<!--            </div>-->
+<!--            </div>-->
+
+<!--            <div class="checkout_summary item-style">-->
+<!--                <h2 class="semibold">Summary</h2>-->
+<!--                <div>-->
+<!--                    <h5 class="mini">Subtotal ( Including VAT )</h5>-->
+<!--                    <p class="mini">$ 2500.00</p>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <h5 class="mini">Shipping fee</h5>-->
+<!--                    <p class="mini">$ 0.00</p>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <h5 class="mini">Total</h5>-->
+<!--                    <p class="normal">$ 2500.00</p>-->
+
+<!--                </div>-->
+<!--                <p class="mini">$ 214.24 Includes VAT of</p>-->
+
+<!--                <div class="checkout_shopping_cart">-->
+<!--                    <div><h5>Shopping cart</h5>-->
+<!--                    <p>1 item(s)</p>-->
+<!--                    </div>-->
+<!--                <div><img src="img/white_phone.jpg">-->
+<!--                    <p>Центрирование по горизонтали. Для центрирования блока по горизонтали можно использовать следующий CSS код: .container { width: 80%; margin: 0 auto; }</p>-->
+<!--                    <p>$ 2500.00</p></div>-->
+<!--                    <p>Qty :1</p>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class=""></div>-->
+<!--        </section>-->
+<!--    </main>-->
+<!--</div>-->
+
+
+</body>
+</html>
